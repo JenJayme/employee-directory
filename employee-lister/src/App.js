@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Container, Table } from 'react-bootstrap';
-// import Gallery from '../src/components/gallery'
+import { Container } from 'react-bootstrap';
+import Gallery from '../src/components/gallery'
 import EmployeeTable from '../src/components/table'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,10 +11,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src="../images/pawnee-seal.png" className="App-logo" alt="logo" />
+        <h1>City of Pawnee Employee Directory</h1>
       </header>
       <Container>
         <div>
-            <EmployeeTable />
+            <Gallery />
         </div>
       </Container>
 
