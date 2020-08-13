@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Container } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
 import Gallery from '../src/components/gallery'
 
 function App() {
@@ -22,9 +22,11 @@ function App() {
         </a>
       </header>
       <Container>
+        <Table>
         <div>
           <Gallery />
         </div>
+        </Table>
       </Container>
 
     </div>

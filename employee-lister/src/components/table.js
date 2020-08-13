@@ -1,8 +1,7 @@
 import React from 'react';
 import Employees from './data';
 import BootstrapTable from 'react-bootstrap-table-next';
-
-
+import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
 const columns = [{
         dataField: 'id',
@@ -34,4 +33,4 @@ const columns = [{
     }];
 
 export default () =>
-    <BootstrapTable keyField='id' data={products} columns={columns} />
+    <BootstrapTable keyField='id' data={Employees} columns={columns} />
