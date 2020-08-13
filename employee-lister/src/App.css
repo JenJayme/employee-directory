@@ -14,14 +14,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(4, 4, 59);
+  height: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 20px;
 }
 
 .App-link {
@@ -35,4 +36,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Table {
+  margin: 20px;
+}
+
+.rowhead {
+  background-color: rgb(167, 139, 103);
 }
