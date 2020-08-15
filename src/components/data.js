@@ -5,7 +5,7 @@ let Employees = [
       lastName: "Knope",
       title: "Deputy Director",
       department: "City of Pawnee Parks and Recreation",
-      birthday: "1/18/75",
+      birthday: "1/18/1975",
       email: "lknope@pawnee.org",
       phone: "(765) 747-4858",
       photo: "knope.jpg",
@@ -95,7 +95,7 @@ let Employees = [
       lastName: "Perkins",
       title: "Public Relations Director",
       department: "City of Pawnee Health Department",
-      birthday: "7/20/76",
+      birthday: "7/20/1976",
       email: "aperkins@pawneehealth.org",
       phone: "(765) 747-1529",
       photo: "perkins.jpg"
@@ -105,7 +105,7 @@ let Employees = [
       lastName: "Brendanawicz",
       title: "City Planner",
       department: "City of Pawnee Municipal Government",
-      birthday: "1/11/75",
+      birthday: "1/11/1975",
       email: "mark@pawnee.org",
       phone: "(765) 747-1529",
       photo: "mark.jpg"
@@ -115,7 +115,7 @@ let Employees = [
       lastName: "Griggs-Knope",
       title: "Director",
       department: "City of Pawnee Department of Education",
-      birthday: "3/5/53",
+      birthday: "3/5/1953",
       email: "mgriggs@pawneeschools.org",
       phone: "(765) 747-1529",
       photo: "griggs.jpg"
