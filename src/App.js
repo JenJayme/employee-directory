@@ -15,7 +15,7 @@ function App() {
       </header>
       <Container>
         <div>
-            <Gallery />
+            <EmployeeTable />
         </div>
       </Container>
 
