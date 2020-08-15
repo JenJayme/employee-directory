@@ -1,8 +1,8 @@
 //PARENT COMPONENT WITH DATA inc CONSTRUCT ARRAY OF ITEMS
 import React from 'react';
 import Employees from './data';
-// import { Table } from 'react-bootstrap';
-import BootstrapTable from 'react-bootstrap-table-next';
+import { Table } from 'react-bootstrap';
+// import BootstrapTable from 'react-bootstrap-table-next';
 
 
 const columns = [{
@@ -46,65 +46,66 @@ const EmployeeTable = () => {
     let artUrl = process.env.PUBLIC_URL + "/images/" + Employees[i].photo;
     console.log(artUrl);
     EmployeesWTags.push(
-        <tr>
-          <td>
-            <img key={Employees[i].index} src={artUrl} alt={fullName} className="headshots"></img>
-          </td>
+      <tr>
+        <td>
+          <img key={Employees[i].index} src={artUrl} alt={fullName} className="headshots"></img>
+        </td>
 
-          <td>
-            <p><strong>{fullName}</strong></p>
-          </td>
+        <td>
+          <p><strong>{fullName}</strong></p>
+        </td>
 
-          <td>
-            <p>{Employees[i].title}</p>
-          </td>
+        <td>
+          <p>{Employees[i].title}</p>
+        </td>
 
-          <td>
-            <p>{Employees[i].department}</p>
-          </td>
+        <td>
+          <p>{Employees[i].department}</p>
+        </td>
 
-          <td>
-            <p>{Employees[i].phone}</p>
-          </td>
+        <td>
+          <p>{Employees[i].phone}</p>
+        </td>
 
-          <td>
-            <p>{Employees[i].email}</p>
-          </td>
+        <td>
+          <p>{Employees[i].email}</p>
+        </td>
 
-          <td>
-            <p>{Employees[i].birthday}</p>
-          </td>
+        <td>
+          <p>{Employees[i].birthday}</p>
+        </td>
 
-          <td>
-            <p>{Employees[i].id}</p>
-          </td>
+        <td>
+          <p>{Employees[i].id}</p>
+        </td>
 
-        </tr>
+      </tr>
     )
   }
   return (
 
-<BootstrapTable keyField='id' data={ Employees } columns={ columns } />
+    /* <BootstrapTable keyField='id' data={ Employees } columns={ columns } /> */
 
-/* <Table striped bordered hover> */
-  // <thead>
-  //   <tr className="rowhead">
-  //     <th>Photo</th>
-  //     <th>Name</th>
-  //     <th>Title</th>
-  //     <th>Department</th>
-  //     <th>Phone</th>
-  //     <th>Email</th>
-  //     <th>Birthday</th>
-  //     <th>Employee ID</th>
-  //   </tr>
-  // </thead>
-  // <tbody>
-  // {EmployeesWTags}
-  // </tbody>
-// </Table>
+    < Table striped bordered hover >
+      <thead>
+        <tr className="rowhead">
+          <th>Photo</th>
+          <th>Name</th>
+          <th>Title</th>
+          <th>Department</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Birthday</th>
+          <th>Employee ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        {EmployeesWTags}
+      </tbody>
+    </Table >
 
   )
 }
 
 export default EmployeeTable;
+
