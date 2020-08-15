@@ -1,8 +1,43 @@
 //PARENT COMPONENT WITH DATA inc CONSTRUCT ARRAY OF ITEMS
 import React from 'react';
 import Employees from './data';
-import { Table } from 'react-bootstrap';
+// import { Table } from 'react-bootstrap';
+import BootstrapTable from 'react-bootstrap-table-next';
 
+
+const columns = [{
+  dataField: 'photo',
+  text: 'Photo',
+  sort: false
+}, {
+  dataField: 'name',
+  text: 'Name',
+  sort: true
+}, {
+  dataField: 'title',
+  text: 'Title',
+  sort: false
+}, {
+  dataField: 'department',
+  text: 'Department',
+  sort: true
+}, {
+  dataField: 'phone',
+  text: 'Phone',
+  sort: false
+}, {
+  dataField: 'email',
+  text: 'Email',
+  sort: false
+}, {
+  dataField: 'birthday',
+  text: 'Birthday',
+  sort: true
+}, {
+  dataField: 'id',
+  text: 'Employee ID',
+  sort: false
+}];
 
 const EmployeeTable = () => {
   let EmployeesWTags = [];
@@ -49,23 +84,25 @@ const EmployeeTable = () => {
   }
   return (
 
-<Table striped bordered hover>
-  <thead>
-    <tr className="rowhead">
-      <th>Photo</th>
-      <th>Name</th>
-      <th>Title</th>
-      <th>Department</th>
-      <th>Phone</th>
-      <th>Email</th>
-      <th>Birthday</th>
-      <th>Employee ID</th>
-    </tr>
-  </thead>
-  <tbody>
-  {EmployeesWTags}
-  </tbody>
-</Table>
+<BootstrapTable keyField='id' data={ Employees } columns={ columns } />
+
+/* <Table striped bordered hover> */
+  // <thead>
+  //   <tr className="rowhead">
+  //     <th>Photo</th>
+  //     <th>Name</th>
+  //     <th>Title</th>
+  //     <th>Department</th>
+  //     <th>Phone</th>
+  //     <th>Email</th>
+  //     <th>Birthday</th>
+  //     <th>Employee ID</th>
+  //   </tr>
+  // </thead>
+  // <tbody>
+  // {EmployeesWTags}
+  // </tbody>
+// </Table>
 
   )
 }
