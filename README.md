@@ -28,7 +28,7 @@ In the project directory, run:
 ## [Visuals](#visuals)
 
 
-![Example Gif](./public/images/example.gif)
+![Example Gif](./images/example.gif)
 
 <hr>
 
